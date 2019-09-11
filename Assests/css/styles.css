@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: grey;
+}
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  main {
+    margin: 30px 0;
+  }
+  
+
+#scroll-content > div {
+  background: grey;
+  height: 40px;
+  margin-bottom: 5px;
+}
+  /* header stuff*/
+
+ 
+  
+  .block-header {
+    color: #0048ba;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    text-align: center;
+   
+  }
+  
+  #logo {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color:grey;
+    text-align: center;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover {
+    color: black;
+  }
+  
+  .navbar {
+ 
+    background: black;
+    border: none;
+    text-align: center;
+  }
+
+ 
+  .nav-link{
+    color: red;
+    word-wrap: break-word;
+   
+  }
+  .block form-horizontal{
+    width: 55px;
+    height: 55px;
+  }
+  
+
+  #about-image {
+    float: left;
+    width: 500px;
+    height: 500px;
+   
+  }
+ 
+  .row {
+    display: flex;
+    
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    color: #0048ba;         
+  }
+  
+
+.column-2{
+  flex: 10%;
+  padding: 20px;
+  color: #0048ba;
+  position: center;
+}
+ /*contact stuff*/
+
+
+
+ .form-group{
+   position: center;
+   font-size: 29px;
+   color: #0048ba;
+   background:grey;
+   padding: 10px;
+   border-radius: 2px;
+  width: 66%;
+ }
+  
+  
+  .submit-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    color:black;
+    background-color: #0048ba;
+    border: 0;
+    position: relative;
+  }
+  
+  .submit-btn:hover {
+    opacity: .7;
+  }
+  /* stuff to make sure it is mobel*/
+
+  @media only screen and (max-width: 640px) {
+    .body {
+        position: absolute;
+        font-size: 35px;
+        transform: translate(-50%, -400%);
+        color: white;
+    }
+    .navbar-header{
+      position: static;
+      font-size: 25px;
+      text-align: center;
+    }
+    .btn {
+        position: relative;
+        font-size: 25px;
+        padding: 6px 12px;
+        transform: translate(-50%, -350%);
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .body {
+        position: absolute;
+        font-size: 55px;
+        transform: translate(-50%, -150%);
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    .navbar-header{
+      position: relative;
+      font-size: 30px;
+      text-align: center;
+    }
+    .btn {
+        position: relative;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .body {
+        position: absolute;
+        font-size: 60px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .navbar-header{
+      position: relative;
+      font-size: 25px;
+      text-align: center;
+    }
+    .btn {
+      position: relative;
+      font-size: 30px;
+        
+    }
+  }
+}
